@@ -5,7 +5,7 @@
 2. eu-west-2(London) for the users from Europe, 
 3. us-west-1(North California) for the users from Amarica
 
-![alt text](<Route53 Geolocation Architecture.jpg>)
+![alt text](<images/Route53 Geolocation Architecture.jpg>)
 
 
 ### For ap-southeast-1 (Singapore Region)
@@ -16,7 +16,7 @@
 #### Create a custom route table for two private subnets
 #### Create a natgateway for private subnets to conect internet
 #### Create a default route and associate two private subnets to custom route table
-![alt text](image.png)
+![alt text](images/image.png)
 
 #### Create loadbalancer security group that add the rules ssh, http, https in inbound rules and add port 80 to web server security group in outbound rule
 
@@ -56,7 +56,7 @@ echo "<html><body><h1>Hello! This is SINGAPORE WEB SERVER 2</h1></body></html>" 
 
 #### Create Bastionhost server for connect with private two web servers
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 #### Want to see app with flag like Singapre Flag, so edited in /var/www/html/index.html
 ```
@@ -72,7 +72,7 @@ echo "<html><body><h1>Hello! This is SINGAPORE WEB SERVER 2</h1></body></html>" 
 #### Domain name is hayko.ink from namecheap
 #### in Route 53, create public hosted zone and then create Record name www.hayko.ink with A type,region is Singapore,routing is Geolocation
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 #### Create certificate in ACM 
 
@@ -89,33 +89,33 @@ ns-921.awsdns-51.net
 
 ```
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 #### Test nslookup www.hayko.ink 8.8.8.8
 
 #### Run www.hayko.ink with VPN Singapore
 
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 #### For eu-west-2(London Region), create resources according Singapore Region and run
 
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
-![alt text](image-8.png)
+![alt text](images/image-8.png)
 
-![alt text](image-9.png)
+![alt text](images/image-9.png)
 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 #### For us-west-1(N.California Region), create resources according Singapore Region and run
 
-![alt text](image-12.png)
+![alt text](images/image-12.png)
 
-![alt text](image-10.png)
+![alt text](images/image-10.png)
 
-![alt text](image-11.png)
+![alt text](images/image-11.png)
 
 ### if error face
 ```
